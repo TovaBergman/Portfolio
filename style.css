@@ -8,7 +8,7 @@ html {
 }
 
 .sky {
-    background: url('./images/sky.png') no-repeat center bottom;
+    background: url('./images/sky.PNG') no-repeat center bottom;
     position: absolute;
     width: 100vw;
     height: 100vh;
