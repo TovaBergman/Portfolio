@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="loading-screen">
+        <div class="name-animation">
+            <span class="letter">T</span>
+            <span class="letter">o</span>
+            <span class="letter">v</span>
+            <span class="letter">a</span>
+            <span class="letter"> </span>
+            <span class="letter">B</span>
+            <span class="letter">e</span>
+            <span class="letter">r</span>
+            <span class="letter">g</span>
+            <span class="letter">m</span>
+            <span class="letter">a</span>
+            <span class="letter">n</span>
+        </div>
+    </div>
+    <div class="background">
+        <div class="sky"></div>
+        <div class="city"></div>
+        <div class="midground"></div>
+        <div class="foreground">
+            <div class="tree tree1"></div>
+        </div>
+    </div>
+    <div class="menu">
+        <ul class="menu-items">
+            <li><a href="#introduction">Introduction</a></li>
+            <li><a href="#cv">CV</a></li>
+            <li><a href="#projects">Projects</a></li>
+        </ul>
+    </div>
+    <div class="hamburger" onclick="toggleMenu()">&#9776;</div>
+    <div class="modal" id="modal">
+        <div class="modal-content-wrapper">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal()">&times;</span>
+                <div class="content">
+                    <section id="introduction">
+                        <h1>Hello! Hej!</h1>
+                        <div class="intro-language-icons">
+                            <img src="./assets/html5.png" alt="HTML5" title="HTML5">
+                            <img src="./assets/css3.png" alt="CSS3" title="CSS3">
+                            <img src="./assets/javascript.png" alt="JavaScript" title="JavaScript">
+                            <img src="./assets/sql.png" alt="SQL" title="SQL">
+                            <img src="./assets/python.png" alt="Python" title="Python">
+                        </div>
+                        <p>Let's be somewhat redundant and start with this: I'm Tova! As the headline above suggests, I
+                            speak both English and Swedish, which is in big part due to the fact that I am from Sweden
+                            and live in London. I also speak a very tiny amount of Spanish from my time living in
+                            Dominican Republic, but please don't test me on that - I'll only embarrass myself.
+                            <br>
+                            <br>
+                            As might be evident from the look of this portfolio, designed using my original drawings,
+                            I'm quite an artistic person. So it
+                            won't be
+                            shocking to learn that I have two arts degrees; a Creative Writing BA and a Screenwriting
+                            MA. Before coming to the UK for university, however, my academic pursuits looked a bit
+                            different. I studied on a Science and Technology programme in my teens, with a Digital
+                            Design focus, then went on to study pick-and-mix modules covering subjects including Produce
+                            and
+                            Nutrition, Folk Culture, Ancient Egyptian and Nordic Religion, and Astrophysics.
+                            <br>
+                            <br>
+                            After graduating from London Film School, I spent a brief stint working in TV production,
+                            researching and coordinating for the documentary series Deadly Disasters which aired on BBC
+                            World. Once COVID-19 shut down most of the industry, I instead took a job at TikTok in the
+                            spring of 2020, where I would spend 4 years. During my time there, I moved from my first
+                            role in Trust & Safety, to the music team working on the newly launched distribution project
+                            SoundOn, and then into e-commerce where I started as a trainer and then moved up into
+                            programme manager.
+                            <br>
+                            <br>
+                            Since leaving TikTok, I have taken some time to focus on my health, as I was recovering from
+                            surgery. I also took the opportunity to pick up my technology interest again by completing a
+                            12-week software development bootcamp, where I have learned several languages and had the
+                            chance to build a few projects which I am excited to share.
+                            <br>
+                            <br>
+                            Now, I feel ready and prepared to step into a new role, and would be interested in junior
+                            full-stack developer roles. Considering my background, I would also be a good fit for
+                            project management positions, where my coding knowledge would aid in communication and
+                            understanding with the team. I'm particularly interested in companies which centre
+                            sustainability, femtech, and overall anything which helps to improve our beautiful world.
+                            <br>
+                            <br>
+                            Reach out, let's discuss what I can do for you!
+                        </p>
+                        <a href="https://www.linkedin.com/in/tova-bergman-87315891" target="_blank">
+                            <img src="./assets/linkedin.png" alt="LinkedIn" title="LinkedIn">
+                        </a>
+                    </section>
+                    <section id="cv">
+                        <h1>My CV</h1>
+                        <a id="cv-download-link" href="assets/Tova Bergman CV -24.pdf"
+                            download="Tova Bergman CV -24.pdf">
+                            <img src="assets/Tova Bergman CV -24-1.png" alt="My CV" style="width: 100%; height: auto;">
+                        </a>
+                    </section>
+                    <section id="projects">
+                        <h1>My Projects</h1>
+                        <div class="project-container">
+                            <div class="project-box royal-purple"
+                                data-summary="Cadenza is a plugin to change the way you stream music.">
+                                <h2>Cadenza</h2>
+                                <h5>(Coming Soon)</h5>
+                                <div class="project-language-icons">
+                                    <img src="./assets/python.png" alt="Python" title="Python" class="small-icon">
+                                </div>
+                            </div>
+                            <div class="project-box navy-blue"
+                                data-summary="Rusty Spoons is a task tracker, helping everyone - but in particular neurodivergent people - to organise their lives.">
+                                <h2>Rusty Spoons</h2>
+                                <h5>(Coming Soon)</h5>
+                                <div class="project-language-icons">
+                                    <img src="./assets/javascript.png" alt="JavaScript" title="JavaScript"
+                                        class="small-icon">
+                                    <img src="./assets/html5.png" alt="HTML5" title="HTML5" class="small-icon">
+                                    <img src="./assets/css3.png" alt="CSS3" title="CSS3" class="small-icon">
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="confirmation-modal" id="confirmation-modal" style="display: none;">
+        <div class="confirmation-modal-content">
+            <p>Do you want to download the PDF of my CV?</p>
+            <button id="confirm-download">Yes</button>
+            <button id="cancel-download">No</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
