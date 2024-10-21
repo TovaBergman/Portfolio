@@ -8,7 +8,7 @@ html {
 }
 
 .sky {
-    background: url('./Images/sky.png') no-repeat center bottom;
+    background: url('./images/sky.png') no-repeat center bottom;
     position: absolute;
     width: 100vw;
     height: 100vh;
@@ -27,7 +27,7 @@ html {
 }
 
 .city {
-    background: url('./Images/skyline.png') no-repeat center bottom;
+    background: url('./images/skyline.png') no-repeat center bottom;
     position: absolute;
     width: 100vw;
     /* Adjust width to 100vw */
@@ -43,7 +43,7 @@ html {
 }
 
 .midground {
-    background: url('./Images/midground.png') no-repeat center bottom;
+    background: url('./images/midground.png') no-repeat center bottom;
     position: absolute;
     width: 110vw;
     /* Adjust width to 110vw */
@@ -69,7 +69,7 @@ html {
 }
 
 .tree1 {
-    background: url('./Images/pinetree.png') no-repeat center bottom;
+    background: url('./images/pinetree.png') no-repeat center bottom;
     position: absolute;
     bottom: -30px;
     width: 60vw;
